@@ -1,0 +1,49 @@
+:root {
+  --primary: #ff4f01;
+
+  --green: #06cc84;
+  --green-hover: #038354;
+
+  --bg-color-banner-destaque: #edf5f8;
+
+  --main-text-color: #5b5b5b;
+
+  --text-value-product-color: #518ad0;
+
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  padding: 30px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+
+:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+body {
+  background: var(--white);
+  color: var(--main-text-color);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
