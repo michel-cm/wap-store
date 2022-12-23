@@ -1,3 +1,4 @@
+/* cabeçalho 01 */
 .cabecalhoInfo {
   padding: 0.75rem 0;
 }
@@ -13,12 +14,12 @@
   flex-wrap: wrap;
 }
 
-.cabecalhoInfo .styleTxtPrimary {
+.styleTxtPrimary {
   color: var(--primary);
   font-weight: 700;
 }
 
-.cabecalhoInfo .styleTxtSecondary {
+.styleTxtSecondary {
   color: var(--black);
   font-size: 0.8rem;
 }
@@ -89,4 +90,65 @@
 
 .meuCarrinhoCabecalho a {
   text-decoration: none;
+}
+
+/* cabeçalho 02 */
+.cabecalhoMenu {
+  background-color: var(--primary);
+}
+
+.navArea {
+  width: 100%;
+}
+
+.navArea ul {
+  display: flex;
+}
+
+.navItem {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.navItem-menuOpen {
+  width: 14rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navLinkItem {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-decoration: none;
+}
+
+.navArea .navMain .navLinkItem::after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  background-color: var(--primary-300);
+  position: absolute;
+  right: 0;
+  top: 12px;
+  align-self: center;
+}
+
+.navItemLink-menuOpen {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+}
+
+.iconArrow img {
+  width: 50%;
 }

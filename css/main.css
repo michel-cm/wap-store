@@ -1,6 +1,6 @@
 .internalRow {
   display: flex;
-  max-width: 75rem;
+  max-width: 70rem;
   margin: 0 auto;
   align-items: center;
 }

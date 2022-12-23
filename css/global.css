@@ -1,5 +1,6 @@
 :root {
   --primary: #ff4f01;
+  --primary-300: #c03d05;
 
   --green: #06cc84;
   --green-hover: #038354;
@@ -8,7 +9,7 @@
 
   --main-text-color: #6b6b6b;
 
-  --text-value-product-color: #518ad0;
+  --blue: #518ad0;
 
   --white: #fff;
   --black: #000;
