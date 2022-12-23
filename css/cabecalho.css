@@ -1,0 +1,92 @@
+.cabecalhoInfo {
+  padding: 0.75rem 0;
+}
+
+.AreaGroupCabecalho {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.logoAndInputArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cabecalhoInfo .styleTxtPrimary {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.cabecalhoInfo .styleTxtSecondary {
+  color: var(--black);
+  font-size: 0.8rem;
+}
+
+.cabecalhoInfo-logo {
+  width: 10rem;
+}
+
+.cabecalhoInfo .logo-area {
+  margin-right: 0.75rem;
+}
+
+.formSearch {
+  display: flex;
+  width: 500px;
+  max-width: 600px;
+
+  align-items: center;
+}
+
+.formSearch-searchBox {
+  height: 48px;
+  width: 100%;
+  border-radius: 12px 0 0 12px;
+  border: 1px solid var(--gray-300);
+  border-right: none;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+
+.formSearch-searchBox:focus {
+  height: 44px;
+  border: 1px solid transparent;
+}
+
+.formSearch .btn-search {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+
+  height: 48px;
+  width: 55px;
+  border-radius: 0 12px 12px 0;
+}
+
+.btn-search:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-search img {
+  width: 30px;
+  height: 30px;
+}
+
+.accountArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meuCarrinhoCabecalho {
+  display: flex;
+  align-items: center;
+}
+
+.meuCarrinhoCabecalho a {
+  text-decoration: none;
+}

@@ -6,22 +6,25 @@
 
   --bg-color-banner-destaque: #edf5f8;
 
-  --main-text-color: #5b5b5b;
+  --main-text-color: #6b6b6b;
 
   --text-value-product-color: #518ad0;
 
   --white: #fff;
   --black: #000;
+
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-500: #7c7c8a;
 }
 
 * {
-  padding: 30px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
   color: var(--black);
 }
 
