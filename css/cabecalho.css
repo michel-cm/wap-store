@@ -128,18 +128,18 @@
   justify-content: center;
   text-decoration: none;
 
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 
 .active {
-  height: calc(100% -4px);
-  border-bottom: 4px solid var(--primary-500);
+  height: calc(100% -5px);
+  border-bottom: 5px solid var(--primary-500);
 }
 
 .navLinkItem:hover {
-  height: calc(100% -4px);
-  border-bottom: 4px solid var(--primary-500);
+  height: calc(100% -5px);
+  border-bottom: 5px solid var(--primary-500);
   opacity: 0.9;
   transition: all ease 0.3s;
 }
@@ -160,7 +160,7 @@
 }
 
 .navItem-natal {
-  padding-top: 4px;
+  padding-top: 8px;
 }
 
 .navItemLink-menuOpen {
@@ -172,4 +172,37 @@
 
 .iconArrow img {
   width: 50%;
+}
+
+/* BreadCrumb */
+.areaBreadCrumb {
+  padding: 1rem;
+}
+
+.breadcrumb {
+  display: flex;
+  font-size: 0.7rem;
+  align-items: center;
+}
+
+.breadcrumb a {
+  color: var(--gray-500);
+  text-decoration: none;
+}
+
+.breadcrumb li:last-child a {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: text;
+}
+
+.areaBreadCrumb .breadcrumb li + li::before {
+  padding: 8px;
+  color: var(--gray-500);
+  content: "/\00a0";
+}
+
+.breadcrumb li a:hover:not(.activeBreadCrumb) {
+  color: var(--black);
 }
