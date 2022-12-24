@@ -4,9 +4,7 @@ export const accordion = () => {
   const reduzirTexto = document.querySelector(".js-accordion-reduzirTexto");
 
   const accordionAction = () => {
-    accordionElement.classList.contains("ativo")
-      ? accordionElement.classList.remove("ativo")
-      : accordionElement.classList.add("ativo");
+    accordionElement.classList.toggle("ativo");
 
     changeStatusLeiaMais();
   };
