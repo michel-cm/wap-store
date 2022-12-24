@@ -42,7 +42,7 @@ li {
 body {
   background: var(--white);
   color: var(--main-text-color);
-  padding-bottom: 5rem; /* REMOVEEEER ISSO */
+  padding-bottom: 20rem; /* REMOVEEEER ISSO */
 }
 
 body,

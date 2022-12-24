@@ -6,6 +6,12 @@ export const accordion = () => {
   const accordionAction = () => {
     accordionElement.classList.toggle("ativo");
 
+    if (accordionElement.classList.contains("ativo")) {
+      accordionElement.style.height = accordionElement.scrollHeight + 10 + "px";
+    } else {
+      accordionElement.style.height = 0;
+    }
+
     changeStatusLeiaMais();
   };
 
