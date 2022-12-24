@@ -100,6 +100,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-decoration: underline;
 }
 
+/* area de destaque escondida */
 .areaDestaqueTextoEscondido {
   padding: 0 7.5rem;
 }
@@ -167,10 +168,20 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .recolherTexto {
-  display: inline-block;
+  display: flex;
   margin-top: 2rem;
   width: 100%;
-  text-align: center;
+
+  align-items: center;
+  justify-content: center;
 
   text-decoration: none;
+}
+
+.js-accordion {
+  display: none; 
+}
+
+.js-accordion.ativo {
+  display: block;
 }

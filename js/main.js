@@ -1,3 +1,4 @@
 import {produtos} from '../data/produtos.js';
+import {accordion} from './accordion.js';
 
-console.log(produtos)
+accordion()
