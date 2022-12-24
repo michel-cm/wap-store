@@ -206,3 +206,41 @@
 .breadcrumb li a:hover:not(.activeBreadCrumb) {
   color: var(--black);
 }
+
+/* areaDestaque */
+.areaDestaque {
+  background-color: var(--bg-color-banner-destaque);
+  padding: 0.5rem;
+}
+
+.areaDestaque-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.areDestaqueDescricao {
+  flex: 0 0 50%;
+}
+
+.areDestaqueDescricao h1 {
+  color: var(--primary);
+  line-height: 1.7;
+}
+
+.areDestaqueDescricao p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.areDestaqueDescricao a {
+  color: var(--primary);
+  font-size: 0.8rem;
+}
+
+.areDestaqueDescricao a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
