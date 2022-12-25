@@ -5,6 +5,11 @@
   padding: 0 1rem;
 }
 
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
 /* limpar o 'X' do Internet Explorer */
 input[type="search"]::-ms-clear {
   display: none;
@@ -185,7 +190,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .js-accordion.ativo {
-  animation: slideDown 0.5s forwards;
+  animation: slideDown 0.6s forwards;
 }
 
 @keyframes slideDown {
@@ -195,4 +200,179 @@ input[type="search"]::-webkit-search-results-decoration {
   to {
     opacity: 1;
   }
+}
+
+/* area de filtros */
+.areaFiltros {
+  padding: 1.25rem 0;
+}
+
+.areaFiltros-itens {
+  display: flex;
+  gap: 1.5rem;
+
+  justify-content: end;
+}
+
+.filtroItem {
+  font-size: 0.8rem;
+
+  color: var(--main-text-color);
+}
+
+.filtroItem select {
+  border-radius: 4px;
+  height: 45px;
+  padding: 0.8rem 1.75rem 0.8rem 0.8rem;
+  color: var(--main-text-color);
+  appearance: none;
+
+  border: 1px solid var(--main-text-color);
+  background-image: url("../images/icons/iconArrowDown-select.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1.5rem;
+}
+
+.filtroItem select:focus {
+  outline: 0;
+}
+
+/* area de produtos */
+/** Aside Menu */
+.areaListaProdutos {
+  width: 100%;
+}
+
+.AreaProdutosSections {
+  display: flex;
+}
+
+.areaAside {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  width: 30%;
+}
+
+.areaAside .titleCategoria {
+  line-height: 2;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.areaAside .categoria-itens {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.areaAside .categoria-itens a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--main-text-color);
+}
+.areaAside .categoria-itens a:hover,
+.areaAside .categoriasList-verMais:hover {
+  color: var(--primary);
+}
+
+.areaAside .categoriasList-verMais {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  color: var(--main-text-color);
+
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+/** Lista produtos **/
+.areaProdutos-itens {
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.areaProduto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.produtoLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 0.8rem;
+}
+
+.produtoLink img {
+  width: 100%;
+}
+
+.produtoInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produtoInfo img {
+  width: 45%;
+}
+
+.produtoInfo .areaSelos {
+  display: flex;
+}
+
+.areaValores {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+}
+
+.areaValores .valor {
+  color: cornflowerblue;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.areaValores span {
+  font-size: 0.75rem;
+}
+
+.areaValores .pixBoleto {
+  color: cornflowerblue;
+  font-weight: 600;
+}
+
+.produtoInfo button {
+  background-color: var();
+  width: 100%;
+  height: 50px;
+  padding: 0.5rem 0;
+  margin: 0.7rem 0;
+
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--green);
+
+  color: var(--white);
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produtoInfo button img {
+  width: 1.2rem;
+  margin-right: 0.5rem;
 }

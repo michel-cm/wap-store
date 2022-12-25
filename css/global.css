@@ -8,7 +8,7 @@
 
   --bg-color-banner-destaque: #edf5f8;
 
-  --main-text-color: #6b6b6b;
+  --main-text-color: #706d6d;
 
   --blue: #518ad0;
 
@@ -26,23 +26,18 @@
   box-sizing: border-box;
 }
 
-a {
-  color: var(--black);
+html {
+  scroll-behavior: smooth;
 }
 
 li {
   list-style: none;
 }
 
-:focus {
-  outline: 0;
-  box-shadow: 0 0 0 2px var(--primary);
-}
-
 body {
   background: var(--white);
   color: var(--main-text-color);
-  padding-bottom: 20rem; /* REMOVEEEER ISSO */
+  padding-bottom: 10rem; /* REMOVER */
 }
 
 body,

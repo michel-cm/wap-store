@@ -83,6 +83,10 @@
   justify-content: center;
 }
 
+.accountArea a {
+  color: var(--black);
+}
+
 .meuCarrinhoCabecalho {
   display: flex;
   align-items: center;
