@@ -102,7 +102,7 @@
 }
 
 .navArea {
-  width: 100%;
+  
 }
 
 .navArea ul {
@@ -136,11 +136,6 @@
   border-bottom: 5px solid transparent;
 }
 
-.active {
-  height: calc(100% -5px);
-  border-bottom: 5px solid var(--primary-500);
-}
-
 .navLinkItem:hover {
   height: calc(100% -5px);
   border-bottom: 5px solid var(--primary-500);
@@ -150,7 +145,7 @@
 
 .navMain .navLinkItem::after {
   content: "";
-  width: 1px;
+  width: 3px;
   height: 35px;
   background-color: var(--primary-300);
   position: absolute;

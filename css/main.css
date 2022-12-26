@@ -125,42 +125,44 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 12px;
 }
 
-.areaDestaqueTextoEscondido h2 {
-  margin: 2.5rem 0 0 0;
+.itemDescricao h2 {
+  margin: 2.5rem 0 1rem 0;
   font-size: 1.3rem;
   color: var(--primary);
 
   text-align: center;
 }
 
-.areaDestaqueTextoEscondido p {
+.itemDescricao p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.areaDestaqueEscondido-item h3 {
+  font-size: 1rem;
+  color: var(--primary);
+}
+.areaDestaqueEscondido-item p {
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0.7rem 0;
 }
 
-.itemDescricao p {
-  text-align: center;
-}
-
-.areaDestaqueTextoEscondido h3 {
-  font-size: 1rem;
-  color: var(--primary);
-}
-.areaDestaqueTextoEscondido ul {
+.areaDestaqueEscondido-item ul {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   padding: 0 1.5rem;
 }
 
-.areaDestaqueTextoEscondido ul li {
+.areaDestaqueEscondido-item ul li {
   list-style: disc;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
-.areaDestaqueTextoEscondido ul li a {
+.areaDestaqueEscondido-item ul li a {
   text-decoration: none;
   color: var(--gray-700);
 }
@@ -215,19 +217,19 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .filtroItem {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 
   color: var(--main-text-color);
 }
 
 .filtroItem select {
   border-radius: 4px;
-  height: 45px;
+  height: 40px;
   padding: 0.8rem 1.75rem 0.8rem 0.8rem;
   color: var(--main-text-color);
   appearance: none;
 
-  border: 1px solid var(--main-text-color);
+  border: 1px solid var(--gray-300);
   background-image: url("../images/icons/iconArrowDown-select.png");
   background-repeat: no-repeat;
   background-position: right center;
@@ -252,7 +254,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   flex-direction: column;
   gap: 2.25rem;
-  width: 30%;
+  width: 25%; /* dasdaDSADASDASDAS */
 }
 
 .areaAside .titleCategoria {
@@ -288,36 +290,75 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 /** Lista produtos **/
 .areaProdutos-itens {
-  padding: 30px;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  justify-content: center;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.areaProduto {
+.link {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
+  gap: 1rem;
+  padding: 2rem 1rem;
+  border: 1px solid transparent;
 
-.produtoLink {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  font-size: 0.8rem;
-}
-
-.produtoLink img {
   width: 100%;
+}
+
+.link:hover {
+  cursor: pointer;
+  border: 1px solid #d3c9c7;
+}
+
+.link .produto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.75rem;
+
+  position: relative;
+}
+
+.produto .seloFreteGratis {
+  width: 30%;
+  position: absolute;
+}
+
+.produto .areaDesconto {
+  background-color: var(--black);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+
+  width: fit-content;
 }
 
 .produtoInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.produtoInfo .areaStars {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+
+  color: orange;
+}
+
+.produtoInfo .stars {
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.produtoInfo .starsValue {
+  font-size: 0.75rem;
 }
 
 .produtoInfo img {
@@ -355,7 +396,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .produtoInfo button {
   background-color: var();
   width: 100%;
-  height: 50px;
+  height: 2.75rem;
   padding: 0.5rem 0;
   margin: 0.7rem 0;
 
@@ -372,7 +413,59 @@ input[type="search"]::-webkit-search-results-decoration {
   justify-content: center;
 }
 
+.produtoInfo button:hover {
+  cursor: pointer;
+  background-color: var(--green-hover);
+}
+
 .produtoInfo button img {
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+
+/* Area Paginação */
+.areaPaginacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.areaEncontrados {
+  font-size: 0.75rem;
+}
+
+.areaControls {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.areaControls a {
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  padding: 0.5rem 0.9rem;
+  text-decoration: none;
+
+  font-size: 0.75rem;
+  color: var(--main-text-color);
+}
+
+.areaControls .paginacao-primeiro {
+}
+
+.areaControls a:hover:not(.disabled) {
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  color: var(--white);
+}
+
+.areaControls a.select {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid transparent;
+}
+
+.areaControls a.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }

@@ -13,7 +13,7 @@ const createMainCabecalho = () => {
                     src="images/logo/logo.jpg"
                     alt="Logotipo da WapStore"
                     class="cabecalhoInfo-logo"
-                    title="Voltar para Home"
+                    title="Voltar para o início"
                   />
                 </a>
               </div>

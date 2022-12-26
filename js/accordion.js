@@ -37,16 +37,8 @@ export const accordion = () => {
     }
   }
 
-  const scrollToElement = () => {
-    window.scroll(
-      0,
-      Position(document.getElementById("js-accordion-ref-scroll"))
-    );
-  };
-
   const handleReduzirText = () => {
-    /*leiaMais.scrollIntoView({ behavior: "smooth", }, true);*/
-    scrollToElement;
+    leiaMais.scrollIntoView({ behavior: "smooth", });    
     accordionAction();
     changeStatusLeiaMais();
   };
