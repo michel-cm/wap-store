@@ -1,3 +1,7 @@
+.models {
+  display: none;
+}
+
 .internalRow {
   max-width: 76rem;
   margin: 0 auto;
@@ -341,6 +345,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .produto .seloFreteGratis {
   width: 30%;
   position: absolute;
+
+  display: none;
 }
 
 .produto .areaDesconto {
