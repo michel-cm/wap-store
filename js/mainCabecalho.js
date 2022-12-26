@@ -1,5 +1,5 @@
 const createMainCabecalho = () => {
-  let mainCabecalho = document.querySelector(".mainCabecalho");
+  const mainCabecalho = document.querySelector(".mainCabecalho");
 
   mainCabecalho.innerHTML = `
     <header class="mainCabecalho">
