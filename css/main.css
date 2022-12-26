@@ -254,7 +254,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   flex-direction: column;
   gap: 2.25rem;
-  width: 25%; /* dasdaDSADASDASDAS */
+  width: 25%;
 }
 
 .areaAside .titleCategoria {
@@ -266,8 +266,13 @@ input[type="search"]::-webkit-search-results-decoration {
 .areaAside .categoria-itens {
   display: flex;
   flex-direction: column;
-
   gap: 0.5rem;
+}
+
+.areaAside .categoria-itens .valores {
+  display: inline-block;
+
+  gap: 2rem;
 }
 
 .areaAside .categoria-itens a {
@@ -290,8 +295,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 /** Lista produtos **/
 .areaProdutos-itens {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
 }
 
 .link {
@@ -300,8 +307,6 @@ input[type="search"]::-webkit-search-results-decoration {
   gap: 1rem;
   padding: 2rem 1rem;
   border: 1px solid transparent;
-
-  width: 100%;
 }
 
 .link:hover {
@@ -428,7 +433,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 3rem;
+  padding: 3rem 1rem 0 1rem;
 }
 
 .areaEncontrados {
@@ -437,7 +442,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .areaControls {
   display: flex;
-  gap: 0.6rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .areaControls a {
@@ -445,12 +451,20 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 4px;
   padding: 0.5rem 0.9rem;
   text-decoration: none;
-
   font-size: 0.75rem;
   color: var(--main-text-color);
+
+  display: inline-block;
 }
 
-.areaControls .paginacao-primeiro {
+.iconArrowPaginacao {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.areaControls .iconArrowPaginacao span {
+  font-size: 1.1rem;
 }
 
 .areaControls a:hover:not(.disabled) {
@@ -459,7 +473,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: var(--white);
 }
 
-.areaControls a.select {
+.areaControls a.ativo {
   background-color: var(--primary);
   color: var(--white);
   border: 1px solid transparent;
@@ -468,4 +482,20 @@ input[type="search"]::-webkit-search-results-decoration {
 .areaControls a.disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5rem 0;
+
+  font-size: 0.9rem;
+  color: var(--gray-400);
+}
+
+.footerContent img {
+  width: 8rem;
+  margin-top: 1rem;
 }

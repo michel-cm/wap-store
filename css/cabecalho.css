@@ -101,10 +101,6 @@
   background-color: var(--primary);
 }
 
-.navArea {
-  
-}
-
 .navArea ul {
   display: flex;
 }

@@ -37,7 +37,6 @@ li {
 body {
   background: var(--white);
   color: var(--main-text-color);
-  padding-bottom: 10rem; /* REMOVER */
 }
 
 body,
