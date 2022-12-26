@@ -3,8 +3,6 @@ export const accordion = () => {
   const leiaMais = document.querySelector(".js-accordion-leiaMais");
   const reduzirTexto = document.querySelector(".js-accordion-reduzirTexto");
 
-  const refScroll = document.querySelector(".js-accordion-ref");
-
   const accordionAction = () => {
     accordionElement.classList.toggle("ativo");
 
@@ -38,7 +36,7 @@ export const accordion = () => {
   }
 
   const handleReduzirText = () => {
-    leiaMais.scrollIntoView({ behavior: "smooth", });    
+    leiaMais.scrollIntoView({ behavior: "smooth" });
     accordionAction();
     changeStatusLeiaMais();
   };

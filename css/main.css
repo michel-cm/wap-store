@@ -10,6 +10,22 @@ input:focus {
   box-shadow: 0 0 0 2px var(--primary);
 }
 
+.overlayBackground {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: none;
+
+  background-color: var(--black);
+  opacity: 0.5;
+
+  z-index: 10;
+
+  transition: all 0.4s ease;
+}
+
 /* limpar o 'X' do Internet Explorer */
 input[type="search"]::-ms-clear {
   display: none;
@@ -271,7 +287,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .areaAside .categoria-itens .valores {
   display: inline-block;
-
   gap: 2rem;
 }
 

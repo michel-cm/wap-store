@@ -63,10 +63,56 @@ const createMainCabecalho = () => {
                     <img src="images/icons/icon-arrowDown.png" alt="" />
                   </div>
                 </a>
+
+                <div class="menuOpenEscondido">
+                  <ul>
+                    <li>
+                      <a href="#">Ar Condicionado</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Ventilação</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Eletrodomésticos</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Eletroportáteis</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Casa Inteligente</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Comércio e Indústria</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Máquinas e Ferramentas</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Materiais de Instalação</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Fluído Gás Refrigerante</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                    <li>
+                      <a href="#">Peças</a>
+                      <img src="images/icons/icon-arrowRight.png" alt="" />
+                    </li>
+                  </ul>
+                </div>
               </li>
+
               <li class="navItem">
                 <a href="#" class="navLinkItem">
-                  <div class="iconHamburger">
+                  <div>
                     <img src="images/icons/icon-ar.jpg" alt="" />
                   </div>
                   <span>Ar Condicionado</span>
@@ -74,7 +120,7 @@ const createMainCabecalho = () => {
               </li>
               <li class="navItem">
                 <a href="#" class="navLinkItem active">
-                  <div class="iconHamburger">
+                  <div>
                     <img src="images/icons/icon-eletro.jpg" alt="" />
                   </div>
                   <span>Eletrodomésticos</span>
@@ -82,7 +128,7 @@ const createMainCabecalho = () => {
               </li>
               <li class="navItem">
                 <a href="#" class="navLinkItem">
-                  <div class="iconHamburger">
+                  <div>
                     <img src="images/icons/icon-eletro2.jpg" alt="" />
                   </div>
                   <span>Eletroportáteis</span>
@@ -90,7 +136,7 @@ const createMainCabecalho = () => {
               </li>
               <li class="navItem">
                 <a href="#" class="navLinkItem">
-                  <div class="iconHamburger">
+                  <div>
                     <img src="images/icons/industria.jpg" alt="" />
                   </div>
                   <span>Comércio e Indústria</span>
@@ -98,7 +144,7 @@ const createMainCabecalho = () => {
               </li>
               <li class="navItem">
                 <a href="#" class="navLinkItem">
-                  <div class="iconHamburger">
+                  <div>
                     <img src="images/icons/icon-pecas.jpg" alt="" />
                   </div>
                   <span>Peças</span>
@@ -106,7 +152,7 @@ const createMainCabecalho = () => {
               </li>
               <li class="navItem">
                 <a href="#" class="navLinkItem">
-                  <div class="iconHamburger">
+                  <div>
                     <img src="images/icons/icon-ferramentas.jpg" alt="" />
                   </div>
                   <span>Máquinas e Ferramentas</span>
@@ -114,7 +160,7 @@ const createMainCabecalho = () => {
               </li>
               <li class="navItem">
                 <a href="#" class="navLinkItem navItem-natal">
-                  <div class="iconHamburger">
+                  <div>
                     <img src="images/icons/icon-natal.jpg" alt="" />
                   </div>
                   <span>Natal</span>
