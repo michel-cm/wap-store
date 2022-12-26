@@ -53,7 +53,7 @@ export const produtos = [
   },
   {
     id: 3,
-    nome: "Geladeira/Refrigerador Electrolux Degelo Prático 240 Litros Cycle Defrost Branco RE31-220V",
+    nome: "Geladeira/Refrigerador Electrolux Degelo Prático 240 Litros Cycle Defrost Branco RE31 - 220V",
     marca: "electrolux",
     desconto: 23,
     valor: 1890.52,
@@ -182,7 +182,7 @@ export const produtos = [
     imgProduto:
       "images/produtos/m_forno-el-trico-continental-44-litros-branco-bc44b-220v.jpg",
     imgMarca: "images/selos/continental.jpg",
-    seloProcel: false,
+    seloProcel: true,
     imgVoltagem: "images/selos/voltagem.jpg",
     star: false,
     freteGratis: false,

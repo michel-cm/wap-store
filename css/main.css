@@ -323,9 +323,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .link {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 2rem 1rem;
+
+  padding: 0 1rem;
   border: 1px solid transparent;
+  height: 580px;
 }
 
 .link:hover {
@@ -336,30 +337,47 @@ input[type="search"]::-webkit-search-results-decoration {
 .link .produto {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: 0.75rem;
-
   position: relative;
+}
+
+.link .produto img {
+  max-width: 250px;
+}
+
+.produto .areaNomeProduto {
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .produto .seloFreteGratis {
   width: 30%;
   position: absolute;
-
+  left: 0.5rem;
+  top: 0;
   display: none;
 }
 
 .produto .areaDesconto {
-  background-color: var(--black);
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
   margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
 
+.produto .areaDesconto span {
+  display: inline-block;
+  background-color: var(--black);
   font-size: 1rem;
   font-weight: 700;
   color: var(--white);
-
-  width: fit-content;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
 }
 
 .produtoInfo {
@@ -387,12 +405,34 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 0.75rem;
 }
 
-.produtoInfo img {
-  width: 45%;
+.produtoInfo .areaImgMarca {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.produtoInfo .areaImgMarca img {
+  max-width: 100%;
+  width: 7rem;
 }
 
 .produtoInfo .areaSelos {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtoInfo .areaSelos img {
+  max-width: 100%;
+}
+
+.areaSelos .seloProcel {
+  width: 3.5rem;
+}
+.areaSelos .seloVoltagem {
+  width: 1.75rem;
 }
 
 .areaValores {

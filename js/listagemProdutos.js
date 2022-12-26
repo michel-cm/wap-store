@@ -10,7 +10,7 @@ export const listarProdutos = () => {
   }
 
   const selosProcelExist = (produto, element) => {
-    produto.seloProcel ? element.style.display = "block" : element.style.display = "none";
+    produto.seloProcel ? element.style.display = "block" : element.style.visibility = "hidden";
   }
 
   const checkStars = (produto, element) => {
