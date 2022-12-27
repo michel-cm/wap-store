@@ -57,8 +57,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .breadcrumb {
   display: flex;
-  font-size: 0.7rem;
   align-items: center;
+}
+
+.breadcrumb .home {
+  font-size: 0.7rem;
+}
+
+.breadcrumb .arrowResponsive {
+  display: none;
 }
 
 .breadcrumb a {

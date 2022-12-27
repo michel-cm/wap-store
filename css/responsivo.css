@@ -36,6 +36,10 @@
   .areaButtonMenuResponsivo {
     display: flex;
   }
+
+  .mainCabecalho {
+    border-bottom: 1px solid var(--gray-300);
+  }
 }
 
 @media (max-width: 820px) {
@@ -120,6 +124,25 @@
   .areaDestaqueTextoEscondido {
     padding: 0 1rem;
   }
+
+  .breadcrumb li:last-child a {
+    color: var(--gray-400);
+    font-size: 0.75rem;
+  }
+
+  .breadcrumb .home {
+    display: none;
+  }
+  .breadcrumb .arrowResponsive {
+    font-size: 1.5rem;
+    display: flex;
+  }
+  .areaBreadCrumb .breadcrumb li + li::before {
+    content: "";
+  }
+  .areaDestaque-content img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -142,6 +165,9 @@
   .iconArrowPaginacao .anterior,
   .iconArrowPaginacao .proximo {
     display: none;
+  }
+  .formSearch-searchBox {
+    font-size: 0.8rem;
   }
 }
 
