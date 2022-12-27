@@ -48,6 +48,9 @@
   .areaFiltrarResponsivo {
     display: flex;
   }
+  .areaDestaqueTextoEscondido {
+    padding: 0 2.5rem;
+  }
 }
 
 @media (max-width: 740px) {
@@ -105,11 +108,17 @@
   .link .produto img {
     max-width: 12rem;
   }
+  .areaDestaqueEscondidoDicas {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 580px) {
   .areaMenuResponsive.ativo {
     width: 75vw;
+  }
+  .areaDestaqueTextoEscondido {
+    padding: 0 1rem;
   }
 }
 

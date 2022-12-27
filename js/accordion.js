@@ -25,16 +25,6 @@ export const accordion = () => {
       : (leiaMais.innerText = "Leia mais >");
   };
 
-  function Position(obj) {
-    var currenttop = 0;
-    if (obj.offsetParent) {
-      do {
-        currenttop += obj.offsetTop;
-      } while ((obj = obj.offsetParent));
-      return [currenttop];
-    }
-  }
-
   const handleReduzirText = () => {
     leiaMais.scrollIntoView({ behavior: "smooth" });
     accordionAction();
