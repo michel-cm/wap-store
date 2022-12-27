@@ -265,6 +265,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /** Area Filtros Responsivo **/
 .areaFiltrarResponsivo {
   min-width: 100%;
+  display: none;
 }
 .areaFiltrarResponsivo button {
   outline: 0;
@@ -480,7 +481,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .produtoInfo button {
   width: 100%;
   height: 2.75rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
   margin: 0.7rem 0;
 
   outline: none;
