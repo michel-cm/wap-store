@@ -661,7 +661,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .areaMenuResponsive .imgArea {
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .areaMenuResponsive .imgArea img {
@@ -670,9 +670,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .areaMenuResponsive .menu-closer {
   font-size: 1.8rem;
-  text-align: end;
-  padding-right: 1.5rem;
+  align-self: flex-end;
   cursor: pointer;
+  width: 5rem;
 }
 .areaMenuResponsive .menu-closer:hover {
   color: var(--primary);
