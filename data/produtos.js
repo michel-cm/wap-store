@@ -1,7 +1,7 @@
 //finalizar
 export const produtos = [
   {
-    id: 0,
+    id: "p1",
     nome: "Forno a Gás de Embutir Venax Bianco 90 Litros Branco",
     marca: "venax",
     desconto: 21,
@@ -18,7 +18,7 @@ export const produtos = [
     freteGratis: false,
   },
   {
-    id: 1,
+    id: "p2",
     nome: "Forno a Gás de Embutir Venax Arena Eg GII 50 Litros Grill Inox",
     marca: "venax",
     desconto: 21,
@@ -35,7 +35,7 @@ export const produtos = [
     freteGratis: false,
   },
   {
-    id: 2,
+    id: "p3",
     nome: "Micro-ondas LG Solo 30 Litros Preto MS3097",
     marca: "lg",
     desconto: 28,
@@ -52,7 +52,7 @@ export const produtos = [
     freteGratis: false,
   },
   {
-    id: 3,
+    id: "p4",
     nome: "Geladeira/Refrigerador Electrolux Degelo Prático 240 Litros Cycle Defrost Branco RE31 - 220V",
     marca: "electrolux",
     desconto: 23,
@@ -69,7 +69,7 @@ export const produtos = [
     freteGratis: false,
   },
   {
-    id: 4,
+    id: "p5",
     nome: "Lava e Seca LG VC5 11kg Branca CV3011WG4A",
     marca: "lg",
     desconto: 20,
@@ -86,7 +86,7 @@ export const produtos = [
     freteGratis: false,
   },
   {
-    id: 5,
+    id: "p6",
     nome: "Forno Elétrico de Embutir Venax Grand Gourmet 45 Litros Preto",
     marca: "venax",
     desconto: 21,
@@ -103,7 +103,7 @@ export const produtos = [
     freteGratis: false,
   },
   {
-    id: 6,
+    id: "p7",
     nome: "Geladeira/Refrigerador French Door 525L Preto GR-X228NMSM",
     marca: "lg",
     desconto: 20,
@@ -120,7 +120,7 @@ export const produtos = [
     freteGratis: false,
   },
   {
-    id: 7,
+    id: "p8",
     nome: "Lava e Seca LG Smart 14kg Branca WD14WGSP6 - 220V",
     marca: "lg",
     desconto: 23,
@@ -137,7 +137,7 @@ export const produtos = [
     freteGratis: true,
   },
   {
-    id: 8,
+    id: "p9",
     nome: "Coifa de Parede Fogatti Slim 90cm Vidro Curvo Inox",
     marca: "fogatti",
     desconto: 32,
@@ -154,7 +154,7 @@ export const produtos = [
     freteGratis: true,
   },
   {
-    id: 9,
+    id: "p10",
     nome: "Micro-ondas Consul 32 Litros Branco CMS46AB",
     marca: "consul",
     desconto: 21,
@@ -171,7 +171,7 @@ export const produtos = [
     freteGratis: true,
   },
   {
-    id: 10,
+    id: "p11",
     nome: "Forno Elétrico Continental 44 Litros Grill Branco BC44B",
     marca: "continental",
     desconto: 20,
@@ -188,7 +188,7 @@ export const produtos = [
     freteGratis: false,
   },
   {
-    id: 11,
+    id: "p12",
     nome: "Coifa de Parede Fogatti Slim Vidro Curvo Inox 60cm",
     marca: "fogatti",
     desconto: 21,

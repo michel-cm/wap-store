@@ -26,6 +26,10 @@
     flex-direction: column;
     gap: 0.5rem;
   }
+  
+  .cart-area.ativo {
+    width: 40vw;
+  }
 }
 
 @media (max-width: 980px) {
@@ -54,6 +58,9 @@
   }
   .areaDestaqueTextoEscondido {
     padding: 0 2.5rem;
+  }
+  .cart-area.ativo {
+    width: 50vw;
   }
 }
 
@@ -115,6 +122,9 @@
   .areaDestaqueEscondidoDicas {
     grid-template-columns: repeat(1, 1fr);
   }
+  .cart-area.ativo {
+    width: 60vw;
+  }
 }
 
 @media (max-width: 580px) {
@@ -149,6 +159,9 @@
   .produtoInfo button {
     font-size: 0.8rem;
   }
+  .cart-area.ativo {
+    width: 75vw;
+  }
 }
 
 @media (max-width: 480px) {
@@ -169,6 +182,9 @@
   .formSearch-searchBox {
     font-size: 0.8rem;
   }
+  .cart-area.ativo {
+    width: 80vw;
+  }
 }
 
 @media (max-width: 400px) {
@@ -176,6 +192,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .continuarComprando {
+    font-size: 0.75rem;
+  }
+  
   .link .produto img {
     max-width: 15rem;
   }

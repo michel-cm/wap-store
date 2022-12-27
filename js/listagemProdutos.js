@@ -1,5 +1,6 @@
 import { produtos } from "../data/produtos.js";
 import {formateValue} from "./helpers/formateValue.js"
+import { addToCart } from "./cart.js";
 
 export const listarProdutos = () => {
   const q = (element) => document.querySelector(element);
@@ -10,11 +11,17 @@ export const listarProdutos = () => {
   }
 
   const selosProcelExist = (produto, element) => {
-    produto.seloProcel ? element.style.display = "block" : element.style.visibility = "hidden";
+    produto.seloProcel ? element.style.display = "block" : element.style.display = "none";
   }
 
   const checkStars = (produto, element) => {
     produto.star ? element.style.display = "flex" : element.style.visibility = "hidden";
+  }
+
+  const handleAddToCart = (produtoId, element) => {
+    element.addEventListener("click", () => {
+      addToCart(produtoId);
+    })
   }
 
   // listagem Produtos
@@ -22,7 +29,7 @@ export const listarProdutos = () => {
     const produtoItem = q(".models .model--produto-item").cloneNode(true);
     const areaProdutos = q(".areaProdutos-itens");
 
-    produtoItem.setAttribute("data-key", index);
+    produtoItem.setAttribute("data-key", produto.id);
 
     produtoItem.querySelector(".model--imgProduto").src = produto.imgProduto;
     produtoItem.querySelector(".model--imgProduto").setAttribute('alt', produto.nome);
@@ -46,6 +53,8 @@ export const listarProdutos = () => {
     
     produtoItem.querySelector(".model--valorPrazo").innerHTML = `
     ou ${formateValue(produto.valorPrazo)} em ${produto.parcelas} x de <br /> ${formateValue(produto.valorParcela)} sem juros`
+
+    handleAddToCart(produto.id, produtoItem.querySelector(".js-addToCart"));
 
     areaProdutos.append(produtoItem);
   });

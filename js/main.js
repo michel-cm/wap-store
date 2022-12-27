@@ -2,11 +2,13 @@ import { accordion } from "./accordion.js";
 import { hoverMenuVerTodaLoja } from "./hoverMenuVerTodaLoja.js";
 import { listarProdutos } from "./listagemProdutos.js";
 import { scrollToTop } from "./scrollToTop.js";
+import { cartEvents } from "./cart.js";
 
 accordion();
 hoverMenuVerTodaLoja();
 listarProdutos();
 scrollToTop();
+cartEvents();
 
 const menuResponsivo = () => {
   const buttonOpenMenu = document.querySelector(".areaButtonMenuResponsivo");

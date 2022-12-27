@@ -65,13 +65,23 @@
             >
             <span class="model--valorPrazo"></span>
           </div>
-          <button>
+          <button class="js-addToCart">
             <img
               src="images/selos/cart-botao.svg"
               alt="Botão adicionar ao carrinho"
             />
             <span>Adicionar ao carrinho</span>
           </button>
+        </div>
+      </div>
+
+      <div class="model-produto-cartArea">
+        <img class="model-cart-img" src="" alt="" />
+        <p class="model-cart-nomeProduto"></p>
+        <div class="cart-qtd">
+          <button class="cart-qtd-menos">-</button>
+          <div class="cart-qtd-valor"></div>
+          <button class="cart-qtd-mais">+</button>
         </div>
       </div>
     </div>
@@ -476,63 +486,95 @@
     <footer class="mainFooter"></footer>
 
     <div class="areaMenuResponsive">
-      <div class="menu-closer">&#10006;</div>
-      <div class="imgArea">
-        <img src="images/logo/logo.jpg" alt="Logo Wap.Store" />
-      </div>
-      <ul>
-        <li>
-          <a href="#">Ar Condicionado</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Ventilação</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Eletrodomésticos</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Eletroportáteis</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Casa Inteligente</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Comércio e Indústria</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Máquinas e Ferramentas</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Materiais de Instalação</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Fluído Gás Refrigerante</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-        <li>
-          <a href="#">Peças</a>
-          <img src="images/icons/icon-arrowRight.png" alt="" />
-        </li>
-      </ul>
-      <div class="info">
-        <div class="itemInfo">
-          <img src="images/icons/profile-user.png" alt="Minha conta" />
-          Minha conta
+      <div class="areaInternaMenu">
+       
+          <div class="menu-closer">
+            <span> &#10006;</span>
+          </div>
+          <div class="imgArea">
+            <img src="images/logo/logo.jpg" alt="Logo Wap.Store" />
+          </div>
         </div>
-        <div class="itemInfo">
-          <img src="images/icons/cartMenu.png" alt="Meu carrinho" />
-          Meu carrinho
-        </div>
+        <ul>
+          <li>
+            <a href="#">Ar Condicionado</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Ventilação</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Eletrodomésticos</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Eletroportáteis</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Casa Inteligente</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Comércio e Indústria</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Máquinas e Ferramentas</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Materiais de Instalação</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Fluído Gás Refrigerante</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+          <li>
+            <a href="#">Peças</a>
+            <img src="images/icons/icon-arrowRight.png" alt="" />
+          </li>
+        </ul>
+        <div class="info">
+          <div class="itemInfo">
+            <img src="images/icons/profile-user.png" alt="Minha conta" />
+            Minha conta
+          </div>
+          <div class="itemInfo actionModal">
+            <img src="images/icons/cartMenu.png" alt="Meu carrinho" />
+            Meu carrinho
+          </div>
+        
       </div>
     </div>
+
+    <section class="cart-area">
+      <div class="cart-detales">
+        <div class="menu-closer">
+          <span>&#10006;</span>
+        </div>
+
+        <div class="area-cart-vazio ativo">
+          <span>O seu carrinho está vazio</span>
+          <p>Navegue pela nossa loja e escolha seus produtos!</p>
+          <button class="cart-button continuarComprando">
+            Continuar comprando
+          </button>
+        </div>
+        <div class="cart-area-ProdutoInfo">
+          <div class="area--cart-by-model"></div>
+
+          <div class="cart-totalValor">
+            <span>Total</span>
+            <span class="model-cart-valorTotal"></span>
+          </div>
+
+          <button class="cart-button finalizarCompra">Finalizar Compra</button>
+        </div>
+      </div>
+    </section>
 
     <div class="overlayBackground"></div>
 
