@@ -1,0 +1,150 @@
+@media (max-width: 1064px) {
+  .AreaGroupCabecalho {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .accountArea,
+  .meuCarrinhoCabecalho {
+    display: none;
+  }
+
+  .areaAccountCartResponsive {
+    display: flex;
+  }
+
+  .areaProdutos-itens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .areaDestaque-content img {
+    width: 48%;
+  }
+
+  .areaPaginacao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .cabecalhoMenu {
+    display: none;
+  }
+
+  .areaButtonMenuResponsivo {
+    display: flex;
+  }
+}
+
+@media (max-width: 820px) {
+  .areaAside {
+    display: none;
+  }
+  .areaFiltros .areaFiltros-itens {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .areaAccountCartResponsive {
+    display: none;
+  }
+
+  .areaMenuResponsive.ativo {
+    width: 55vw;
+  }
+
+  .areaMenuResponsive .info {
+    display: flex;
+  }
+
+  .logoAndInputArea {
+    flex-direction: column;
+  }
+
+  .areaDestaque {
+    padding: 1rem 0;
+  }
+
+  .areaDestaque-content {
+    flex-direction: column;
+  }
+  .areaDestaque-content img {
+    width: 60%;
+  }
+  .areDestaqueDescricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .areDestaqueDescricao .leiaMais {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .areaPaginacao .areaControls a:first-child {
+    display: none;
+  }
+  .areaPaginacao .areaControls a:last-child {
+    display: none;
+  }
+  .link .produto img {
+    max-width: 12rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .areaMenuResponsive.ativo {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .produtoInfo button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .link .produto img {
+    max-width: 10rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .areaMenuResponsive .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .iconArrowPaginacao .anterior,
+  .iconArrowPaginacao .proximo {
+    display: none;
+  }
+  .produtoInfo button {
+    padding: 0 1rem;
+    position: relative;
+  }
+  .produtoInfo button img {
+    width: 1.2rem;
+    margin-right: 0;
+    position: absolute;
+    left: 8%;
+    top: 12%;
+  }
+}

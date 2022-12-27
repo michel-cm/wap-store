@@ -95,6 +95,9 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   justify-content: space-between;
 }
+.areaDestaque-content img {
+  max-width: 100%;
+}
 
 .areDestaqueDescricao {
   flex-shrink: 0;
@@ -259,6 +262,23 @@ input[type="search"]::-webkit-search-results-decoration {
 .filtroItem select:focus {
   outline: 0;
 }
+/** Area Filtros Responsivo **/
+.areaFiltrarResponsivo {
+  min-width: 100%;
+}
+.areaFiltrarResponsivo button {
+  outline: 0;
+  border: 0;
+  background-color: var(--primary);
+  padding: 0.9rem;
+  color: var(--white);
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.areaFiltrarResponsivo button:hover {
+  opacity: 0.9;
+}
 
 /* area de produtos */
 /** Aside Menu */
@@ -343,7 +363,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .link .produto img {
-  max-width: 250px;
+  max-width: 15rem;
 }
 
 .produto .areaNomeProduto {
@@ -458,7 +478,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .produtoInfo button {
-  background-color: var();
   width: 100%;
   height: 2.75rem;
   padding: 0.5rem 0;
@@ -548,8 +567,8 @@ input[type="search"]::-webkit-search-results-decoration {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3.5rem 0;
-
+  padding: 3.5rem 1rem;
+  text-align: center;
   font-size: 0.9rem;
   color: var(--gray-400);
 }
@@ -609,4 +628,104 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .scrollToTop:hover {
   opacity: 0.9;
+}
+
+/* Menu Responsivo */
+.areaMenuResponsive {
+  background-color: var(--white);
+  width: 0vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease 0.2s;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.areaMenuResponsive.ativo {
+  width: 40vw;
+  overflow-y: auto;
+}
+
+.areaMenuResponsive .imgArea {
+  margin: 0 auto;
+}
+
+.areaMenuResponsive .imgArea img {
+  width: 8rem;
+}
+
+.areaMenuResponsive .menu-closer {
+  font-size: 1.8rem;
+  text-align: end;
+  padding-right: 1.5rem;
+  cursor: pointer;
+}
+.areaMenuResponsive .menu-closer:hover {
+  color: var(--primary);
+}
+
+.areaMenuResponsive ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.areaMenuResponsive ul li {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+
+  padding: 1.2rem 2rem;
+  border-left: 3px solid transparent;
+}
+
+.areaMenuResponsive ul li a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 0.9rem;
+}
+
+.areaMenuResponsive ul li:hover a {
+  color: var(--primary);
+}
+
+.areaMenuResponsive ul li:hover {
+  border-left: 3px solid var(--primary);
+}
+
+.areaMenuResponsive ul li img {
+  width: 16px;
+  height: 16px;
+}
+
+.areaMenuResponsive .info {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.areaMenuResponsive .info .itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.areaMenuResponsive .info .itemInfo:hover {
+  color: var(--primary);
+}
+
+.areaMenuResponsive .info img {
+  width: 1.75rem;
 }
