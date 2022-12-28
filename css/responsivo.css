@@ -191,6 +191,9 @@
   .iconCartAddToCart {
     display: none;
   }
+  .areaProdutos .internalRow {
+    padding: 0;
+  }
 }
 
 @media (max-width: 400px) {
@@ -207,5 +210,8 @@
 
   .link .produto img {
     max-width: 15rem;
+  }
+  .areaProdutos .internalRow {
+    padding: 0 0.5rem;
   }
 }
