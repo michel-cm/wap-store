@@ -28,10 +28,12 @@ export const listarProdutos = () => {
     elementRef.innerHTML = "Adicionando...";
 
     setTimeout(() => (elementRef.innerHTML = "Adicionado"), 1000);
+    setTimeout(() => elementRef.removeAttribute("disabled"), 1000);
   };
 
   const handleAddToCart = (produtoId, element) => {
     element.addEventListener("click", () => {
+      element.setAttribute("disabled", "");
       showLoadingButtonaddToCard(element);
       addToCart(produtoId);
     });

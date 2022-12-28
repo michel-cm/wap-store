@@ -505,6 +505,14 @@ input[type="search"]::-webkit-search-results-decoration {
   justify-content: center;
 }
 
+.produtoInfo button:disabled {
+  background-color: var(--green-hover);
+}
+
+.produtoInfo button:disabled:hover {
+  cursor: not-allowed;
+}
+
 .produtoInfo button:hover {
   cursor: pointer;
   background-color: var(--green-hover);
