@@ -124,6 +124,10 @@
 
   position: relative;
 
+  z-index: 98;
+}
+
+.navItem-menuOpen:hover {
   z-index: 99;
 }
 

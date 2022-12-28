@@ -448,6 +448,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 100%;
   justify-content: center;
   align-items: center;
+  height: 50px;
 }
 
 .produtoInfo .areaSelos img {

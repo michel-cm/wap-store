@@ -26,7 +26,7 @@
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .cart-area.ativo {
     width: 40vw;
   }
@@ -160,13 +160,19 @@
     font-size: 0.8rem;
   }
   .cart-area.ativo {
-    width: 100vw;   
+    width: 85vw;
   }
 }
 
 @media (max-width: 480px) {
   .link .produto img {
     max-width: 10rem;
+  }
+  .cart-area.ativo {
+    width: 100vw;
+  }
+  .iconCartAddToCart {
+    display: none;
   }
 }
 
@@ -182,6 +188,9 @@
   .formSearch-searchBox {
     font-size: 0.8rem;
   }
+  .iconCartAddToCart {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
@@ -192,7 +201,7 @@
   .continuarComprando {
     font-size: 0.75rem;
   }
-  
+
   .link .produto img {
     max-width: 15rem;
   }

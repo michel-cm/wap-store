@@ -25,10 +25,9 @@ export const listarProdutos = () => {
   };
 
   const showLoadingButtonaddToCard = (elementRef) => {
-    const refContentButton = elementRef.outerHTML;
     elementRef.innerHTML = "Adicionando...";
 
-    setTimeout(() => (elementRef.innerHTML = refContentButton ), 1000);
+    setTimeout(() => (elementRef.innerHTML = "Adicionado"), 1000);
   };
 
   const handleAddToCart = (produtoId, element) => {
