@@ -1,7 +1,5 @@
 # wap-store
 
-## Desktop
-![screencapture-wap-store-teste-vercel-app-2022-12-28-03_35_31](https://user-images.githubusercontent.com/58608300/209769666-ff05fae6-f0a6-4e44-b6d0-76e967ca101d.png)
+![screencapture-wap-store-teste-vercel-app-2022-12-28-03_41_50](https://user-images.githubusercontent.com/58608300/209769849-2f6522f7-6154-4f6c-add0-1a172a3f0dc3.png)
 
-##Mobile
-![screencapture-wap-store-teste-vercel-app-2022-12-28-03_35_58](https://user-images.githubusercontent.com/58608300/209769682-8ee8bfb2-0ba6-46af-9f09-4c1cdb4e8e5d.png)
+![screencapture-wap-store-teste-vercel-app-2022-12-28-03_35_58](https://user-images.githubusercontent.com/58608300/209769857-cdbd5752-3802-41ed-9f35-e6b81fa52d01.png)
