@@ -12,8 +12,10 @@ export const hoverMenuVerTodaLoja = () => {
 
   const hoverMenuCloseAction = () => {
     overlayElement.addEventListener("mouseover", () => {
-      menuVerTodaLojaElement.style.display = "none";
-      overlayElement.style.display = "none";
+      if (menuVerTodaLojaElement.style.display == "block") {
+        menuVerTodaLojaElement.style.display = "none";
+        overlayElement.style.display = "none";
+      }
     });
   };
 

@@ -160,7 +160,7 @@
     font-size: 0.8rem;
   }
   .cart-area.ativo {
-    width: 75vw;
+    width: 100vw;   
   }
 }
 
@@ -181,9 +181,6 @@
   }
   .formSearch-searchBox {
     font-size: 0.8rem;
-  }
-  .cart-area.ativo {
-    width: 80vw;
   }
 }
 

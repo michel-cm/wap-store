@@ -74,16 +74,21 @@ const updateCart = () => {
 
       document.querySelector(".area--cart-by-model").append(produtoCartItem);
     }
-    console.log(cartList);
   }
 };
 
 export const cartEvents = () => {
+  const overlayElement = document.querySelector(".overlayBackground");
+
   const closeCart = () => {
+    overlayElement.style.zIndex = "98";
+    overlayElement.style.display = "none";
     document.querySelector(".cart-area").classList.remove("ativo");
   };
 
   const openCart = () => {
+    overlayElement.style.zIndex = "99";
+    overlayElement.style.display = "block";
     document.querySelector(".cart-area").classList.add("ativo");
   };
 
@@ -105,12 +110,16 @@ export const cartEvents = () => {
       closeCart();
     });
 
-    document.querySelector(".areaMenuResponsive .actionModal").addEventListener("click", () => {
+  document
+    .querySelector(".areaMenuResponsive .actionModal")
+    .addEventListener("click", () => {
       openCart();
       document.querySelector(".areaMenuResponsive").classList.remove("ativo");
-    })
+    });
 
-    document.querySelector(".areaAccountCartResponsive .cartMenu").addEventListener("click", () => {
+  document
+    .querySelector(".areaAccountCartResponsive .cartMenu")
+    .addEventListener("click", () => {
       openCart();
-    })
+    });
 };

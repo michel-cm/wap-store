@@ -18,6 +18,7 @@ export const scrollToTop = () => {
         behavior: "smooth",
       });
     });
+    verifyHeightFromTop();
   };
 
   handleScrollToTop();
