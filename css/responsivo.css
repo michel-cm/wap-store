@@ -197,6 +197,9 @@
   .areaProdutos-itens {
     grid-template-columns: repeat(1, 1fr);
   }
+  .link {
+    border: 1px solid var(--gray-border-outline);
+  }
 
   .continuarComprando {
     font-size: 0.75rem;

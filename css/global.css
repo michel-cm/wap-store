@@ -18,6 +18,8 @@
   --gray-300: #c4c4cc;
   --gray-400: #8d8d99;
   --gray-500: #7c7c8a;
+
+  --gray-border-outline: #d3c9c7;
 }
 
 * {

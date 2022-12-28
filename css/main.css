@@ -357,7 +357,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .link:hover {
   cursor: pointer;
-  border: 1px solid #d3c9c7;
+  border: 1px solid var(--gray-border-outline);
 }
 
 .link .produto {

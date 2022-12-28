@@ -1,5 +1,4 @@
 const overlayElement = document.querySelector(".overlayBackground");
-const subRefZindex = document.querySelector(".areaMenuResponsive");
 
 export const showOverlay = (valueZindex) => {
   valueZindex ? (overlayElement.style.zIndex = valueZindex) : valueZindex;
